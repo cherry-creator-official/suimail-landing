@@ -76,6 +76,7 @@ const footerVariants = {
 
 export default function TeamPage() {
   return (
+    <section id="footer" className="bg-gray-50 py-12">
     <div className="flex flex-col min-h-screen">
       {/* Team Section */}
       <section className="bg-purple-700 py-16 text-white text-center">
@@ -133,12 +134,16 @@ export default function TeamPage() {
             our community and take your email experience to the next level.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+            <button href="https://sui-mail.vercel.app/" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
               Try Suimail for Free
             </button>
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded">
+            <link>
+
+            </link>
+            
+            {/* <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded">
               Upgrade to Pro
-            </button>
+            </button> */}
           </div>
         </motion.div>
       </section>
@@ -197,5 +202,6 @@ export default function TeamPage() {
         </div>
       </motion.footer>
     </div>
+    </section>
   )
 }

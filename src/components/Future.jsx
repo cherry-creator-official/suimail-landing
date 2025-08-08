@@ -1,58 +1,65 @@
 import "react"
-
+import { KeyRound, Lock, Cloud, Wallet } from 'lucide-react'; 
 const HowItWorksAndFuturePlans = () => {
   return (
     <div className="bg-white px-6 py-16">
       {/* How it Works Section */}
       <div className="text-center mb-20">
-        <h2 className="text-3xl font-bold mb-10">How it works?</h2>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
-          <div className="text-center max-w-xs">
-            <div className="bg-black text-white rounded-xl p-3 inline-block mb-4">
-              <img
-                src={"/images/How1.png"}
-                alt="Zk-Login"
-                className="text-2xl  "
-              />
+        <div className=" ">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10">How It Works</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-start gap-10 md:gap-8 lg:gap-12">
+
+          {/* Zk-Login */}
+          <div className="text-center max-w-xs mx-auto group cursor-pointer p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-blue-600 text-white rounded-xl p-3 inline-block mb-4 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-700">
+              <KeyRound className="h-8 w-8" />
             </div>
-            <h3 className="font-semibold text-lg">Zk-Login</h3>
-            <p className="text-sm text-gray-500 mt-2">
-              Securely log in to Suimail using zero-knowledge proofs, ensuring
-              privacy and security.
+            <h3 className="font-semibold text-lg text-gray-800">Decentralized Login</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Securely log in using zero-knowledge proofs for a private, on-chain
+              identity without exposing personal data.
             </p>
           </div>
 
-          <div className="text-center max-w-xs">
-            <div className="bg-black text-white rounded-xl p-4 inline-block mb-4">
-              <img
-                src={"/images/IT2.png"}
-                alt="Advanced EnCryption"
-                className="text-2xl "
-              />{" "}
+          {/* Mail Encryption */}
+          <div className="text-center max-w-xs mx-auto group cursor-pointer p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-blue-600 text-white rounded-xl p-3 inline-block mb-4 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-700">
+              <Lock className="h-8 w-8" /> 
             </div>
-            <h3 className="font-semibold text-lg">Mail Encryption</h3>
-            <p className="text-sm text-gray-500 mt-2">
-              Protect your emails with advanced encryption, ensuring your
-              communication stays private.
+            <h3 className="font-semibold text-lg text-gray-800">End-to-End Encryption</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Protect your communications with robust, blockchain-secured encryption,
+              ensuring absolute privacy for your messages.
             </p>
           </div>
 
-          <div className="text-center max-w-xs">
-            <div className="bg-black text-white rounded-xl p-4 inline-block mb-4">
-              <img
-                src={"/images/Works1.png"}
-                alt="Walrus"
-                className="text-2xl "
-              />{" "}
+          {/* Decentralized Storage */}
+          <div className="text-center max-w-xs mx-auto group cursor-pointer p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-blue-600 text-white rounded-xl p-3 inline-block mb-4 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-700">
+              <Cloud className="h-8 w-8" /> 
             </div>
-            <h3 className="font-semibold text-lg">Storage on Walrus</h3>
-            <p className="text-sm text-gray-500 mt-2">
-              Store your emails securely on decentralized storage powered by
-              Walrus.
+            <h3 className="font-semibold text-lg text-gray-800">Decentralized Storage</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Your data is stored securely on a decentralized network like Walrus,
+              ensuring censorship resistance and data ownership.
             </p>
           </div>
+
+          {/* Pay to Send Model */}
+          <div className="text-center max-w-xs mx-auto group cursor-pointer p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-blue-600 text-white rounded-xl p-3 inline-block mb-4 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-700">
+              <Wallet className="h-8 w-8" /> 
+            </div>
+            <h3 className="font-semibold text-lg text-gray-800">Gas-less Transactions</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Experience seamless interactions with a "Pay to Send" model,
+              eliminating spam and ensuring network efficiency with minimal gas fees.
+            </p>
+          </div>
+
         </div>
       </div>
+              </div>
 
       {/* Future Plans Section */}
       <div>
