@@ -14,9 +14,9 @@ const App = () => {
         element={
           <>
             <HeroSection />
-            <FeaturesSection />
+            {/* <FeaturesSection />
             <Future />
-            <Footer />
+            <Footer /> */}
           </>
         }
       />
@@ -24,4 +24,5 @@ const App = () => {
     </Routes>
   );
 };
+
 export default App;

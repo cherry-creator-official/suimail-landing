@@ -1,6 +1,6 @@
 import "react"
 import { motion } from "framer-motion"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaTelegramPlane, FaLinkedin } from "react-icons/fa"
 import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 const teamMembers = [
@@ -76,7 +76,6 @@ const footerVariants = {
 
 export default function TeamPage() {
   return (
-    <section id="footer" className="bg-gray-50 py-12">
     <div className="flex flex-col min-h-screen">
       {/* Team Section */}
       <section className="bg-purple-700 py-16 text-white text-center">
@@ -190,8 +189,8 @@ export default function TeamPage() {
           <a href="https://x.com/SUIMAIL_">
             <FaXTwitter className="text-blue-400" />
           </a>
-          <a href="https://github.com/SUIMAIL">
-            <FaGithub className="text-gray-800" />
+          <a href="https://t.me/suimailofficial">
+            <FaTelegramPlane className="text-blue-500" />
           </a>
           <a href="https://www.linkedin.com/company/suimail/">
             <FaLinkedin className="text-blue-700" />
@@ -202,6 +201,5 @@ export default function TeamPage() {
         </div>
       </motion.footer>
     </div>
-    </section>
   )
 }
