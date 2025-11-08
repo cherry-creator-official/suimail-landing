@@ -6,20 +6,12 @@ import Footer from './components/Footer.jsx';
 const App = () => {
  
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <HeroSection />
-            <FeaturesSection />
-            <Future />
-            <Footer />
-          </>
-        }
-      />
-      <Route path="/whitepaper" element={<WhitePaper />} />
-    </Routes>
+  <>
+    <HeroSection/>
+    <FeaturesSection/>
+    <Future/>
+    <Footer/>
+  </>
   );
 };
 
