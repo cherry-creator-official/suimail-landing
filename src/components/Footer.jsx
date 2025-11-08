@@ -145,6 +145,7 @@ export default function TeamPage() {
 
       {/* Footer */}
       <motion.footer
+        id="contact"
         className="bg-blue-50 py-10 text-center md:text-left"
         variants={footerVariants}
         initial="hidden"

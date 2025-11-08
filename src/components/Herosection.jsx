@@ -293,12 +293,28 @@ const HeroSection = () => {
             </a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.1, color: "#21C1FF" }}>
-            <a href="#" className="hover:text-blue-500 transition-colors">
+            <a
+              href="#features"
+              onClick={(e) => {
+                e.preventDefault()
+                const el = document.getElementById("features")
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
+              }}
+              className="hover:text-blue-500 transition-colors"
+            >
               About Us
             </a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.1, color: "#21C1FF" }}>
-            <a href="#" className="hover:text-blue-500 transition-colors">
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault()
+                const el = document.getElementById("contact")
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
+              }}
+              className="hover:text-blue-500 transition-colors"
+            >
               Contact Us
             </a>
           </motion.li>
@@ -310,7 +326,7 @@ const HeroSection = () => {
           variants={buttonHoverVariants}
           whileHover="hover"
           onClick={() =>
-            (window.location.href = "https://suimail-fe-xyzapp.vercel.app")
+            (window.location.href = "https://testnet.suimail.app")
           }
         >
           <svg
@@ -358,13 +374,23 @@ const HeroSection = () => {
             Home
           </a>
           <a
-            href="#"
+            href="#features"
+            onClick={(e) => {
+              e.preventDefault()
+              const el = document.getElementById("features")
+              if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }}
             className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors"
           >
             About Us
           </a>
           <a
-            href="#"
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault()
+              const el = document.getElementById("contact")
+              if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }}
             className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors"
           >
             Contact Us
@@ -375,7 +401,7 @@ const HeroSection = () => {
             variants={buttonHoverVariants}
             whileTap={{ scale: 0.95 }}
             onClick={() =>
-              (window.location.href = "https://suimail-fe-xyzapp.vercel.app")
+              (window.location.href = "https://testnet.suimail.app")
             }
           >
             <svg
@@ -468,7 +494,7 @@ const HeroSection = () => {
               variants={buttonHoverVariants}
               whileHover="hover"
               onClick={() =>
-                (window.location.href = "https://suimail-frontend.vercel.app/")
+                (window.location.href = "https://testnet.suimail.app/")
               }
             >
               <svg
