@@ -1,9 +1,11 @@
-"use client";
-import { Link } from "react-scroll";
+"use client"
 
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 
+// Import the images for the features row
+
+// Define icons for the infinite scrolling row
 const icons = [
   { name: "shield", path: "/images/send.png" },
   { name: "lock", path: "/images/padlock.png" },
@@ -20,24 +22,24 @@ const icons = [
   { name: "droplet", path: "/images/Group.png" },
   { name: "shield", path: "/images/send.png" },
   { name: "lock", path: "/images/padlock.png" },
-];
+]
 
 const HeroSection = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
 
   // Handle scroll for parallax effects
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      setScrollY(window.scrollY)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   // Animation variants
   const fadeInUpVariants = {
@@ -50,7 +52,7 @@ const HeroSection = () => {
         ease: [0.22, 1, 0.36, 1],
       },
     },
-  };
+  }
 
   const staggerContainer = {
     hidden: {},
@@ -60,7 +62,7 @@ const HeroSection = () => {
         delayChildren: 0.2,
       },
     },
-  };
+  }
 
   const navbarVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -72,7 +74,7 @@ const HeroSection = () => {
         ease: "easeOut",
       },
     },
-  };
+  }
 
   const buttonHoverVariants = {
     hover: {
@@ -84,7 +86,7 @@ const HeroSection = () => {
         damping: 10,
       },
     },
-  };
+  }
 
   const hexagonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -96,7 +98,7 @@ const HeroSection = () => {
         ease: "easeOut",
       },
     },
-  };
+  }
 
   const floatingAnimation = {
     y: ["-5px", "5px"],
@@ -108,7 +110,7 @@ const HeroSection = () => {
         ease: "easeInOut",
       },
     },
-  };
+  }
 
   // Features row animation
   const featuresRowVariants = {
@@ -121,7 +123,7 @@ const HeroSection = () => {
         repeatType: "loop",
       },
     },
-  };
+  }
 
   return (
     <div className="relative bg-gray-50 overflow-hidden">
@@ -291,26 +293,14 @@ const HeroSection = () => {
             </a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.1, color: "#21C1FF" }}>
-            <Link
-              to="features"
-              smooth={true}
-              duration={600}
-              offset={-70}
-              className="cursor-pointer hover:text-blue-500 transition-colors"
-            >
+            <a href="#" className="hover:text-blue-500 transition-colors">
               About Us
-            </Link>
+            </a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.1, color: "#21C1FF" }}>
-            <Link
-              to="footer"
-              smooth={true}
-              duration={600}
-              offset={-70}
-              className="cursor-pointer hover:text-blue-500 transition-colors"
-            >
+            <a href="#" className="hover:text-blue-500 transition-colors">
               Contact Us
-            </Link>
+            </a>
           </motion.li>
         </ul>
 
@@ -320,7 +310,7 @@ const HeroSection = () => {
           variants={buttonHoverVariants}
           whileHover="hover"
           onClick={() =>
-            (window.location.href = "https://sui-mail.vercel.app/")
+            (window.location.href = "https://suimail-fe-xyzapp.vercel.app")
           }
         >
           <svg
@@ -385,7 +375,7 @@ const HeroSection = () => {
             variants={buttonHoverVariants}
             whileTap={{ scale: 0.95 }}
             onClick={() =>
-              (window.location.href = "https://sui-mail.vercel.app/")
+              (window.location.href = "https://suimail-fe-xyzapp.vercel.app")
             }
           >
             <svg
@@ -478,7 +468,7 @@ const HeroSection = () => {
               variants={buttonHoverVariants}
               whileHover="hover"
               onClick={() =>
-                (window.location.href = "https://sui-mail.vercel.app/")
+                (window.location.href = "https://suimail-frontend.vercel.app/")
               }
             >
               <svg
@@ -509,11 +499,6 @@ const HeroSection = () => {
               className="px-6 py-3 border border-blue-500 text-blue-600 rounded-lg font-karla hover:bg-blue-50 flex items-center justify-center"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-
-            
-              onClick={() =>
-                (window.location.href = "/whitepaper")
-              }
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -871,7 +856,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

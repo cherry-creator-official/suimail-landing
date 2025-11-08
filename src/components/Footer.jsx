@@ -133,16 +133,12 @@ export default function TeamPage() {
             our community and take your email experience to the next level.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <button href="https://sui-mail.vercel.app/" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
               Try Suimail for Free
             </button>
-            <link>
-
-            </link>
-            
-            {/* <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded">
+            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded">
               Upgrade to Pro
-            </button> */}
+            </button>
           </div>
         </motion.div>
       </section>
