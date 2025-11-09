@@ -118,7 +118,7 @@ const Navbar = () => {
             whileHover="animate"
             exit="exit"
             onClick={() =>
-              (window.location.href = "https://suimail.vercel.app")
+              (window.location.href = "https://testnet.suimail.app")
             }
           >
             Connect Wallet
@@ -152,7 +152,7 @@ const Navbar = () => {
             variants={buttonHoverVariants}
             whileTap={{ scale: 0.95 }}
             onClick={() =>
-              (window.location.href = "https://suimail.vercel.app")
+              (window.location.href = "https://testnet.suimail.app")
             }
           >
             Connect Wallet

@@ -60,9 +60,17 @@ const FeaturesSection = () => {
   }
 
   return (
-    <section id="features" className="bg-white">
-      <div className="w-full pt-20 pb-0 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Our Features</h2>
+    <section id="features" className="bg-gray-50 py-12">
+      {/* Section Header */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <div className="flex items-center">
+          <img
+            src="/images/tiny_logo.png"
+            alt="Logo"
+            className="h-8 w-8 mr-2"
+          />
+          <h2 className="text-xl font-semibold uppercase">SuiMail Features</h2>
+        </div>
       </div>
 
       <div>
